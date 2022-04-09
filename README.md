@@ -1,2 +1,1 @@
 # dogorunner
-banzi dogorunner saurnolisgan
