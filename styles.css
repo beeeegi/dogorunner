@@ -1,0 +1,158 @@
+body{
+    text-align: center;
+    background-color: gray;
+}
+
+#head{
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+
+#stopwatch{
+    color: white;
+    box-shadow: 0px 0px 50px white;
+    margin: auto;
+    border-radius: 20px;
+    width: 200px;
+    height: auto;
+}
+
+.game{
+    width: 700px;
+    height: 300px;
+    border: 1px solid #2F2F2F;
+    box-shadow: 0px 0px 100px #2F2F2F;
+    border-radius: 20px;
+    margin: auto;
+    background-color: #2F2F2F;
+}
+
+#road{
+    width: auto;
+    height: 20px;
+    background-image: url(assets/road.png);
+    background-size: auto 20px;
+    border-radius: 10px;
+    position: relative;
+    top: 210px;
+}
+
+#cloud_1{
+    width: 70px;
+    height: 50px;
+    background-image: url(assets/cloud.png);
+    background-size: 70px 50px;
+    position: relative;
+    left: 600px;
+    bottom: 100px;
+}
+
+#cloud_2{
+    width: 70px;
+    height: 50px;
+    background-image: url(assets/cloud.png);
+    background-size: 70px 50px;
+    position: relative;
+    left: 500px;
+    bottom: 210px;
+}
+
+#fh{
+    width: 50px;
+    height: 80px;
+    background-image: url(assets/fire_hydrant.png);
+    background-size: 50px 90px;
+    position: relative;
+    top: 120px;
+    left: 600px;
+}
+
+#dog{
+    width: 70px;
+    height: 70px;
+    background-image: url(assets/dog.png);
+    background-size: 70px 70px;
+    position: relative;
+    left: 50px;
+    top: 210px;
+}
+
+#btn{
+    border: none;
+    background-color: #909090;
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.fh_move{
+    animation: fh_move 1.5s infinite linear;
+}
+
+.jump{
+    animation: jump 0.6s linear;
+}
+
+.cloud1_move{
+    animation: cloud1_move 20s infinite linear;
+}
+
+.cloud2_move{
+    animation: cloud2_move 20s infinite linear;
+}
+
+
+@keyframes jump{
+    0%{
+        top: 210px;
+    }
+
+    30%{
+        top: 130px;
+    }
+
+    50%{
+        top: 80px;
+    }
+
+    80%{
+        top: 130px;
+    }
+
+    100%{
+        top: 210px;
+    }
+}
+
+@keyframes fh_move{
+    0%{
+        left: 600px;
+    }
+
+    100%{
+        left: -20px;
+    }
+}
+
+@keyframes cloud1_move{
+    0%{
+        left: 600px;
+    }
+
+    100%{
+        left: 0px;
+    }
+}
+
+@keyframes cloud2_move{
+    0%{
+        left: 500px;
+    }
+
+    100%{
+        left: 0px;
+    }
+}
